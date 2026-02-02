@@ -7,7 +7,7 @@
 
 ## How to Run
 1. Run `docker-compose up -d`
-2. Visit http://localhost:8080
+2. Visit `http://localhost:8080`
 3. To scale additional web containers: `docker-compose up -d --scale web_scaled=2`
 4. Stop and clean: `docker-compose down`
 
@@ -23,7 +23,7 @@
 
 ## Service Interaction Flow Diagram
 
-         +-------------------+
+        +-------------------+
        |     Web (8080)    |
        +-------------------+
                 |
@@ -33,7 +33,7 @@
        +-------------------+
                 ^
                 |
-   +-------------------------+
-   |   Web_Scaled Containers |
-   +-------------------------+
+       +-------------------+
+       | Web_Scaled Containers |
+       +-------------------+
 
