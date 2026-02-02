@@ -23,7 +23,17 @@
 
 ## Service Interaction Flow Diagram
 
-   [Web - port 8080]  <--->  [DB - MySQL]
-          ^
-          |
-   [Web_scaled containers]
+         +-------------------+
+       |     Web (8080)    |
+       +-------------------+
+                |
+                v
+       +-------------------+
+       |      DB (MySQL)   |
+       +-------------------+
+                ^
+                |
+   +-------------------------+
+   |   Web_Scaled Containers |
+   +-------------------------+
+
